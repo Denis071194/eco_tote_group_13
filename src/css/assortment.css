@@ -108,6 +108,10 @@
     .assortment-item {
         width: calc((100% - 24px) / 2);
     }
+
+    .assortment-buy-btn{
+        width: 340px;
+    }
 }
 
 /*--------SECTION-ASSORTMENT-DESKTOP----*/
@@ -123,6 +127,10 @@
 
     .assortment-item {
         width: calc((100% - 72px) / 4);
+    }
+
+    .assortment-buy-btn {
+        width: 310px;
     }
 
 }
