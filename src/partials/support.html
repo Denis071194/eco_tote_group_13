@@ -1,0 +1,60 @@
+<section class="support-section" id="support">
+  <div class="container">
+    <div class="content-wrapper">
+      <h2 class="support-section-article">
+        Залишились питання? Зв'яжіться з нами!
+      </h2>
+      <h3 class="support-section-paragraph">Ми тут, щоб допомогти!</h3>
+      <form class="support-section-form" name="support_form" autocomplete="off">
+        <div class="input-wrapper">
+          <label class="support-section-form-label" for="user-name">Ім'я</label>
+          <input
+            class="support-section-form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Іван"
+            minlength="5"
+            required
+          />
+          <p class="text-invalid-inp">Error text</p>
+        </div>
+        <div class="input-wrapper">
+          <label class="support-section-form-label" for="user-email"
+            >Електронна пошта</label
+          >
+          <input
+            class="support-section-form-input"
+            type="email"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            name="user-email"
+            id="user-email"
+            placeholder="hello@ecotote.com"
+            required
+          />
+          <p class="text-invalid-inp">Error text</p>
+        </div>
+        <div class="input-wrapper">
+          <label class="support-section-form-label" for="user-comment"
+            >Повідомлення</label
+          >
+          <textarea
+            class="support-section-form-input textarea-style"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+            minlength="3"
+          ></textarea>
+          <p class="text-invalid-ta">Error text</p>
+        </div>
+        <button class="support-section-form-btn" type="submit">
+          Надіслати
+        </button>
+      </form>
+    </div>
+    <div class="picture-wrapper">
+      <!-- EMPTY DIV -->
+    </div>
+  </div>
+</section>
