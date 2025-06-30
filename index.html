@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Fira+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" crossorigin href="/eco_tote_group_13/assets/index-DBqWOUdE.css">
+    <link rel="stylesheet" crossorigin href="/eco_tote_group_13/assets/index-Bu6V1M_g.css">
   </head>
   <body>
     <header class="header">
@@ -451,5 +451,25 @@
           <p class="footer-copy">© 2025 EcoTote. Всі права захищені.</p>
         </div>
 </footer>
+    <script>
+      const burgerBtn = document.querySelector('.burger-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const menuLinks = document.querySelectorAll('.mobile-nav-link');
+
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('is-open');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+      });
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+        });
+      });
+    </script>
   </body>
 </html>
