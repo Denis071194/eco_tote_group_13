@@ -1,0 +1,137 @@
+.container {
+  max-width: 320px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 0 64px;
+  }
+} 
+
+/* gallery */
+
+.gallery {
+  background-color: #ebf8ed;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+
+.gallery-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #030a06;
+  margin-bottom: 16px;
+}
+
+.gallery-text {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #030a06;
+  margin-bottom: 32px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+    gap: 16px;
+  align-items: center;
+  /*row-gap: 16px;*/
+}
+
+.gallery-hover-image {
+  height: auto;
+  border-radius: 32px;
+  overflow: hidden;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  /*.gallery-list {
+    row-gap: 24px;
+    column-gap: 24px;
+  }*/
+
+  .gallery-list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+  }
+
+  .gallery-title {
+    margin-bottom: 24px;
+  }
+
+
+.gallery-image-ecobag {
+    grid-column-start: 2;
+    grid-row-start: 3;
+  }
+
+  .gallery-image-bag-two {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+
+  .gallery-image-bag-three {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+}
+
+
+@media screen and (min-width: 1440px) {
+
+  .gallery-title {
+    font-size: 48px;
+  }
+
+
+  .gallery-list {
+    grid-template-columns: repeat(auto-fit, minmax(421px, 1fr));
+  }
+
+
+   .gallery-image-ecobag {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .gallery-image-bag-three {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+}

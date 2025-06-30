@@ -1,0 +1,125 @@
+.hero-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  margin: 0 auto;
+}
+
+.hero-section-title {
+  font-family: 'Comfortaa', sans-serif;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
+
+.hero-section-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+
+  margin-bottom: 24px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 24px;
+  min-width: 288px;
+  height: 50px;
+  background-color: #030a06;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-section-button:hover,
+.hero-section-button:focus {
+  background: #113916;
+  opacity: 0.6;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-section-button {
+  margin-bottom: 24px;
+}
+
+.hero-section img {
+  border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+  }
+
+  .hero-section-wrapper-big {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 24px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section-wrapper-small {
+    min-width: 340px;
+  }
+
+  .hero-section-title {
+    margin-bottom: 0;
+  }
+
+  .hero-section-text {
+    font-size: 18px;
+
+    margin-bottom: 32px;
+  }
+
+  .hero-section-button {
+    margin: 0;
+    min-width: 148px;
+  }
+
+  .hero-section img {
+    min-width: 704px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 64px;
+  }
+  .hero-section {
+    max-width: 1440px;
+  }
+
+  .hero-section-wrapper-big {
+    gap: 32px;
+  }
+
+  .hero-section-wrapper-small {
+    min-width: 640px;
+  }
+
+  .hero-section-title {
+    min-width: 640px;
+    font-size: 56px;
+  }
+
+  .hero-section img {
+    min-width: 1312px;
+  }
+}

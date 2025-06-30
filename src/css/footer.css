@@ -1,0 +1,158 @@
+.footer {
+  background-color: #75d281;
+}
+
+.footer-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 48px;
+  margin-bottom: 48px;
+  padding-top: 48px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 280px;
+}
+
+.nav-list-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.nav-item-footer {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-footer {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.footer-contacts-copy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  padding-bottom: 48px;
+  border-top: 1px solid rgba(3, 10, 6, 0.15);
+}
+
+.mobile-contacts {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-copy {
+  font-size: 14px;
+}
+
+.footer-icon {
+  display: block;
+}
+
+.nav-link-footer {
+  color: #030a06;
+}
+
+.nav-link-footer:focus,
+.nav-link-footer:hover,
+.footer-icon:hover,
+.footer-icon:focus {
+  color: #818482;
+  fill: #818482;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .footer-logo {
+    width: 164px;
+  }
+
+  .footer-div {
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+  .nav-list-footer {
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 32px;
+  }
+  .social-footer {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .mobile-contacts-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .footer-contacts-copy {
+    gap: 16px;
+    padding-bottom: 64px;
+  }
+  .footer-icon {
+    transform: scale(1.25);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .footer-div {
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 52px;
+  }
+  .footer-logo {
+    margin-right: 177px;
+  }
+  .footer-icon {
+    transform: none;
+    width: 24px;
+    height: 24px;
+  }
+  .footer-contacts-copy {
+    padding-bottom: 80px;
+  }
+}

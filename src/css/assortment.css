@@ -1,0 +1,128 @@
+/*-----SECTION-ASSORTMENT----*/
+
+.container-assortment {
+    padding-top: 32px;
+}
+
+.section-assortment {
+    background-color: #ebf8ed;
+
+}
+
+
+.assortment-title {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030a06;
+
+
+}
+
+.assortment-list {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.assortment-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.assortment-title-item {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
+
+}
+
+.text-assortment {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
+}
+
+.assortment-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
+    margin-top: 8px;
+}
+
+.assortment-buy-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 1px solid #030a06;
+    border-radius: 6px;
+    padding: 8px 20px;
+    width: 288px;
+    height: 40px;
+
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #030a06;
+
+    margin-top: auto;
+
+    transition: background-color 250ms ease, color 250ms ease;
+
+
+}
+
+.assortment-buy-btn:hover,
+.assortment-buy-btn:focus {
+    background-color: #030a06;
+    color: #fff;
+}
+
+
+/*--------SECTION-ASSORTMENT-TABLET----*/
+
+@media screen and (min-width:768px) {
+    .container-assortment {
+        padding: 64px 32px;
+    }
+
+
+    .assortment-list {
+        gap: 24px;
+        row-gap: 24px;
+    }
+
+    .assortment-item {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+/*--------SECTION-ASSORTMENT-DESKTOP----*/
+
+@media screen and (min-width:1440px) {
+    .container-assortment{
+        padding: 64px 64px;
+    }
+
+    .assortment-list {
+        row-gap: 64px;
+    }
+
+    .assortment-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+}
