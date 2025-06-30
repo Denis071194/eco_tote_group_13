@@ -28,5 +28,28 @@
       <load src="./partials/support.html" />
     </main>
     <load src="./partials/footer.html" />
+<<<<<<< HEAD
+=======
+    <script>
+      const burgerBtn = document.querySelector('.burger-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const mobileMenu = document.querySelector('.mobile-menu');
+      const menuLinks = document.querySelectorAll('.mobile-nav-link');
+
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.add('is-open');
+      });
+
+      closeBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+      });
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+        });
+      });
+    </script>
+>>>>>>> upstream/main
   </body>
 </html>
