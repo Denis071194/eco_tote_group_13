@@ -1,0 +1,223 @@
+.support-section-form-btn {
+  font-family: inherit;
+  color: currentColor;
+  display: block;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.support-section input,
+.support-section textarea {
+  font-family: inherit;
+}
+.support-section .container {
+  max-width: 320px;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+/*? -----SUPPORT SECTION----- ?*/
+
+.support-section {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.support-section-article {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  margin-bottom: 24px;
+}
+
+.support-section-paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.content-wrapper {
+  margin-bottom: 24px;
+}
+
+.support-section-form-label {
+  line-height: 1.6;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.support-section-form-input {
+  display: block;
+  height: 42px;
+  width: 100%;
+  outline: transparent;
+  background-color: rgba(3, 10, 6, 0.05);
+  border: 1px solid rgba(3, 10, 6, 0.15);
+  border-radius: 6px;
+  padding: 8px 12px;
+  transition: color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+.support-section-form-input:focus::placeholder {
+  color: transparent;
+}
+
+.support-section-form-input::placeholder {
+  transition: color 300ms ease-in-out;
+  line-height: 1.6;
+  color: rgba(3, 10, 6, 0.6);
+}
+
+.textarea-style {
+  padding: 12px;
+  height: 180px;
+  resize: none;
+}
+
+.support-section-form-input:not(:placeholder-shown):invalid {
+  border-color: #d64040;
+  color: #d64040;
+}
+
+.support-section-form-input:not(:placeholder-shown):invalid + p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-top: 24px;
+}
+
+.input-wrapper:first-child {
+  margin-top: 0;
+}
+
+.text-invalid-inp {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #d64040;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+.text-invalid-ta {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d64040;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+
+.support-section-form-btn {
+  margin-top: 24px;
+  line-height: 1.6;
+  color: #fff;
+  padding: 12px 24px;
+  background-color: #030a06;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  min-width: 288px;
+  outline: none;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+
+.support-section-form-btn:is(:hover, :focus) {
+  color: #030a06;
+  background-color: unset;
+}
+
+.picture-wrapper {
+  background-image: url(../img/support-image/bag1xmobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 288px;
+  height: 428px;
+  border-radius: 40px;
+}
+
+@media screen and (min-resolution: 2x) {
+  .picture-wrapper {
+    background-image: url(../img/support-image/bag2xmobile.jpg);
+  }
+}
+
+/*? -----SECTION8  support-FORM-END----- ?*/
+
+/*! -----------768----------- */
+
+@media screen and (min-width: 768px) {
+  .support-section .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .support-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .support-section-article {
+    max-width: 468px;
+  }
+
+  .picture-wrapper {
+    width: 704px;
+    background-image: url(../img/support-image/bag1xtablet.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .picture-wrapper {
+      background-image: url(../img/support-image/bag2xtablet.jpg);
+    }
+  }
+}
+
+/*! -----------1440----------- */
+
+@media screen and (min-width: 1440px) {
+  .support-section .container {
+    min-width: 1440px;
+    padding-left: 64px;
+    padding-right: 64px;
+
+    display: flex;
+    gap: 24px;
+  }
+
+  .support-section-article {
+    font-size: 48px;
+    max-width: 644px;
+  }
+
+  .content-wrapper {
+    margin-bottom: unset;
+  }
+
+  .picture-wrapper {
+    width: 644px;
+    height: 767px;
+    background-image: url(../img/support-image/bag1xdesk.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .picture-wrapper {
+      background-image: url(../img/support-image/bag2xdesk.jpg);
+    }
+  }
+}

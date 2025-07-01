@@ -1,0 +1,96 @@
+.about-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 64px 0px;
+}
+.about-bcg-image{
+    background-image: url(../img/about/about-mob-1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
+.about-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-main-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.secondary-text{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    margin-bottom: 0;
+}
+.about-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+@media screen and (min-resolution: 2x){
+    .about-bcg-image{
+        background-image: url(../img/about/about-mob-2x.jpg);
+    }
+}
+@media (min-width: 768px){
+    .about-section{
+        padding: 80px 0px;
+    }
+    .about-main-text{
+        margin-bottom: 16px;
+    }
+    .secondary-text{
+        margin-bottom: 0;
+    }
+    .about-section-container {
+        margin: 0 65.5px;
+        gap: 24px;
+    }
+    .about-paragraph {
+        font-size: 18px;
+    }
+    .about-bcg-image {
+        background-image: url(../img/about/about-tab-1x.jpg);
+    }
+        @media screen and (min-resolution: 2x) {
+            .about-bcg-image {
+                background-image: url(../img/about/about-tab-2x.jpg);
+            }
+        }
+}
+@media (min-width: 1440px) {
+    .about-bcg-image{
+        max-width: 1440px;
+    }
+    .about-section {
+        padding-top: 112px;
+        padding-bottom: 94px;
+    }
+    .secondary-text{
+        font-size: 56px;
+    }
+    .about-section-container {
+        margin: 0 369.5px;
+    }
+    /* .about-bcg-image {
+        background-image: url(../img/about/about-desk-1x.jpg);
+    }
+     */
+}
